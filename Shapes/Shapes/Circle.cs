@@ -7,6 +7,7 @@
         {
             if (radius <= 0)
             {
+                // we can create out own type of exception
                 throw new Exception("That is not valid radius");
             }
             _radius = radius;
