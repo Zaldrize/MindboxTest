@@ -15,7 +15,14 @@
         }
         private bool IsValid()
         {
-            return _a>0 && _b>0 && _c>0 && _a < _b + _c && _b < _a + _c && _c < _a + _b;
+            return _a > 0 && _b > 0 && _c > 0 && _a < _b + _c && _b < _a + _c && _c < _a + _b;
+        }
+        public bool IsRightTriangle()
+        {
+            double a2 = _a * _a;
+            double b2 = _b * _b;
+            double c2 = _c * _c;
+            return a2 == b2 + c2 || b2 == a2 + c2 || c2 == a2 + b2;
         }
         public double GetArea()
         {
