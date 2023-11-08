@@ -1,6 +1,6 @@
 ﻿namespace Shapes
 {
-    internal class Triangle : IShape
+    public class Triangle : IShape
     {
         private double _a, _b, _c;
         public Triangle(double a, double b, double c)
@@ -15,7 +15,7 @@
         }
         private bool IsValid()
         {
-            return _a < _b + _c && _b < _a + _c && _c < _a + _b;
+            return _a>0 && _b>0 && _c>0 && _a < _b + _c && _b < _a + _c && _c < _a + _b;
         }
         public double GetArea()
         {

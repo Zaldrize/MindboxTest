@@ -5,7 +5,7 @@
         private double _radius;
         public Circle(double radius)
         {
-            if (radius < 0)
+            if (radius <= 0)
             {
                 throw new Exception("That is not valid radius");
             }
